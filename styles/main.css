@@ -1,3 +1,8 @@
+:root {
+  --color-primary: #468585;
+  --color-hover: #50b498;
+}
+
 .bootstrap-switch {
   display: inline-block;
   direction: ltr;
@@ -71,7 +76,7 @@
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-brown,
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-brown {
   color: #fff;
-  background: #468585;
+  background: var(--color-primary);
 }
 
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-blue,
@@ -121,7 +126,7 @@
   box-shadow: 0 1px 11px rgba(0, 0, 0, 0.25);
 }
 .button-container a {
-  background-color: #468585;
+  background-color: var(--color-primary);
 }
 .bootstrap-switch.bootstrap-switch-off .bootstrap-switch-label {
   background-color: rgba(23, 23, 23, 0.4);
@@ -257,7 +262,7 @@
 .bootstrap-switch.bootstrap-switch-on
   .bootstrap-switch-brown
   ~ .bootstrap-switch-default {
-  background-color: #468585;
+  background-color: var(--color-primary);
 }
 
 .bootstrap-switch.bootstrap-switch-on
@@ -579,7 +584,7 @@
 
 .slider.slider-primary .noUi-connect,
 .slider.slider-primary.noUi-connect {
-  background-color: #468585;
+  background-color: var(--color-primary);
 }
 
 .slider.slider-primary.noUi-target {
@@ -587,7 +592,7 @@
 }
 
 .slider.slider-primary .noUi-handle {
-  background-color: #468585;
+  background-color: var(--color-primary);
 }
 
 .slider.slider-info .noUi-connect,
@@ -670,7 +675,7 @@
 }
 
 .datepicker.datepicker-primary {
-  background-color: #468585;
+  background-color: var(--color-primary);
 }
 
 .datepicker.datepicker-primary th,
@@ -680,11 +685,11 @@
 }
 
 .datepicker.datepicker-primary:after {
-  border-bottom-color: #468585;
+  border-bottom-color: var(--color-primary);
 }
 
 .datepicker.datepicker-primary.datepicker-orient-top:after {
-  border-top-color: #468585;
+  border-top-color: var(--color-primary);
 }
 
 .datepicker.datepicker-primary .dow {
@@ -715,7 +720,7 @@
 .datepicker.datepicker-primary table tr td.active.disabled div,
 .datepicker.datepicker-primary table tr td.active.disabled:hover div {
   background-color: #ffffff;
-  color: #468585;
+  color: var(--color-primary);
 }
 
 .datepicker.datepicker-primary table tr td.day:hover div,
@@ -794,7 +799,7 @@
   tr
   td
   span.active.disabled:hover[disabled] {
-  color: #468585;
+  color: var(--color-primary);
 }
 
 .datepicker-inline {
@@ -903,7 +908,7 @@
 }
 
 .datepicker th {
-  color: #468585;
+  color: var(--color-primary);
 }
 
 .table-condensed > tbody > tr > td,
@@ -1131,7 +1136,7 @@
 .datepicker table tr td.active:hover div,
 .datepicker table tr td.active.disabled div,
 .datepicker table tr td.active.disabled:hover div {
-  background-color: #468585;
+  background-color: var(--color-primary);
   color: #ffffff;
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
@@ -1157,7 +1162,7 @@
 .datepicker table tr td.active:hover[disabled] div,
 .datepicker table tr td.active.disabled[disabled] div,
 .datepicker table tr td.active.disabled:hover[disabled] div {
-  background-color: #468585;
+  background-color: var(--color-primary);
 }
 
 .datepicker table tr td.active:active,
@@ -1200,7 +1205,7 @@
 .datepicker table tr td span.active.disabled,
 .datepicker table tr td span.active.disabled:hover {
   color: #fff;
-  background-color: #468585;
+  background-color: var(--color-primary);
 }
 
 .datepicker table tr td span.active:hover,
@@ -1223,7 +1228,7 @@
 .datepicker table tr td span.active:hover[disabled],
 .datepicker table tr td span.active.disabled[disabled],
 .datepicker table tr td span.active.disabled:hover[disabled] {
-  background-color: #468585;
+  background-color: var(--color-primary);
   -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
@@ -1556,7 +1561,7 @@ fieldset[disabled] .navbar .navbar-nav > a.btn.active {
 }
 
 .btn-primary {
-  background-color: #468585;
+  background-color: var(--color-primary);
   color: #ffffff;
 }
 
@@ -1571,7 +1576,7 @@ fieldset[disabled] .navbar .navbar-nav > a.btn.active {
 .show > .btn-primary.dropdown-toggle,
 .show > .btn-primary.dropdown-toggle:focus,
 .show > .btn-primary.dropdown-toggle:hover {
-  background-color: #50b498;
+  background-color: var(--color-hover);
   color: #ffffff;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1606,34 +1611,34 @@ fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #468585;
-  border-color: #468585;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .btn-primary.btn-simple {
-  color: #468585;
-  border-color: #468585;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .btn-primary.btn-simple:hover,
 .btn-primary.btn-simple:focus,
 .btn-primary.btn-simple:active {
   background-color: transparent;
-  color: #50b498;
-  border-color: #50b498;
+  color: var(--color-hover);
+  border-color: var(--color-hover);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 .btn-primary.btn-link {
-  color: #468585;
+  color: var(--color-primary);
 }
 
 .btn-primary.btn-link:hover,
 .btn-primary.btn-link:focus,
 .btn-primary.btn-link:active {
   background-color: transparent;
-  color: #50b498;
+  color: var(--color-hover);
   text-decoration: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1977,7 +1982,7 @@ fieldset[disabled] .btn-danger.active {
 
 .btn-neutral {
   background-color: #ffffff;
-  color: #468585;
+  color: var(--color-primary);
 }
 
 .btn-neutral:hover,
@@ -2090,14 +2095,14 @@ fieldset[disabled] .btn-neutral.active {
 .show > .btn-neutral.dropdown-toggle:focus,
 .show > .btn-neutral.dropdown-toggle:hover {
   background-color: #ffffff;
-  color: #50b498;
+  color: var(--color-hover);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 .btn-neutral:hover,
 .btn-neutral:focus {
-  color: #50b498;
+  color: var(--color-hover);
 }
 
 .btn-neutral:hover:not(.nav-link),
@@ -2299,7 +2304,7 @@ fieldset[disabled] .btn-link.active {
 }
 
 .form-control:focus {
-  border: 1px solid #468585;
+  border: 1px solid var(--color-primary);
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0 !important;
@@ -2308,7 +2313,7 @@ fieldset[disabled] .btn-link.active {
 
 .form-control:focus + .input-group-addon,
 .form-control:focus ~ .input-group-addon {
-  border: 1px solid #468585;
+  border: 1px solid var(--color-primary);
   border-left: none;
   background-color: transparent;
 }
@@ -2538,7 +2543,7 @@ fieldset[disabled] .btn-link.active {
 
 .input-group-focus .input-group-addon {
   background-color: #ffffff;
-  border-color: #468585;
+  border-color: var(--color-primary);
 }
 
 .input-group-focus.form-group-no-border .input-group-addon {
@@ -2854,12 +2859,12 @@ textarea.form-control:active {
 }
 
 .progress-container.progress-primary .progress-bar {
-  background: #468585;
+  background: var(--color-primary);
 }
 
 .progress-container.progress-primary .progress-value,
 .progress-container.progress-primary .progress-badge {
-  color: #468585;
+  color: var(--color-primary);
 }
 
 .progress-container.progress-info .progress {
@@ -2941,8 +2946,8 @@ textarea.form-control:active {
 }
 
 .badge-primary {
-  border-color: #468585;
-  color: #468585;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .badge-info {
@@ -3045,8 +3050,8 @@ textarea.form-control:active {
 .pagination.pagination-primary .page-item.active > .page-link,
 .pagination.pagination-primary .page-item.active > .page-link:focus,
 .pagination.pagination-primary .page-item.active > .page-link:hover {
-  background-color: #468585;
-  border-color: #468585;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .pagination.pagination-warning .page-item.active > .page-link,
@@ -3078,7 +3083,7 @@ textarea.form-control:active {
 .pagination.pagination-neutral .page-item.active > .page-link:hover {
   background-color: #ffffff;
   border-color: #ffffff;
-  color: #468585;
+  color: var(--color-primary);
 }
 
 button,
@@ -3103,12 +3108,12 @@ small {
 }
 
 a {
-  color: #468585;
+  color: var(--color-primary);
 }
 
 a:hover,
 a:focus {
-  color: #468585;
+  color: var(--color-primary);
 }
 
 h1,
@@ -3208,7 +3213,7 @@ p.description {
 }
 
 .text-primary {
-  color: #468585 !important;
+  color: var(--color-primary) !important;
 }
 
 .text-info {
@@ -3246,12 +3251,12 @@ p.description {
 }
 
 .blockquote.blockquote-primary {
-  border-color: #468585;
-  color: #468585;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .blockquote.blockquote-primary small {
-  color: #468585;
+  color: var(--color-primary);
 }
 
 .blockquote.blockquote-danger {
@@ -3339,7 +3344,7 @@ body {
 }
 
 .separator.separator-primary {
-  background-color: #468585;
+  background-color: var(--color-primary);
 }
 
 .nav-pills .nav-item .nav-link {
@@ -3388,13 +3393,13 @@ body {
 .nav-pills.nav-pills-neutral .nav-item .nav-link.active:focus,
 .nav-pills.nav-pills-neutral .nav-item .nav-link.active:hover {
   background-color: #ffffff;
-  color: #468585;
+  color: var(--color-primary);
 }
 
 .nav-pills.nav-pills-primary .nav-item .nav-link.active,
 .nav-pills.nav-pills-primary .nav-item .nav-link.active:focus,
 .nav-pills.nav-pills-primary .nav-item .nav-link.active:hover {
-  background-color: #468585;
+  background-color: var(--color-primary);
 }
 
 .nav-pills.nav-pills-info .nav-item .nav-link.active,
@@ -3523,8 +3528,8 @@ body {
 }
 
 .nav-tabs.nav-tabs-primary > .nav-item > .nav-link.active {
-  border-color: #468585;
-  color: #468585;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .nav-tabs.nav-tabs-info > .nav-item > .nav-link.active {
@@ -3710,7 +3715,7 @@ body {
 }
 
 .bg-primary {
-  background-color: #468585 !important;
+  background-color: var(--color-primary) !important;
 }
 
 .bg-info {
@@ -4055,7 +4060,7 @@ img {
 }
 
 .popover.popover-primary {
-  background-color: #468585;
+  background-color: var(--color-primary);
 }
 
 .popover.popover-primary .popover-body {
@@ -4063,19 +4068,19 @@ img {
 }
 
 .popover.popover-primary.bs-popover-right .arrow:after {
-  border-right-color: #468585;
+  border-right-color: var(--color-primary);
 }
 
 .popover.popover-primary.bs-popover-top .arrow:after {
-  border-top-color: #468585;
+  border-top-color: var(--color-primary);
 }
 
 .popover.popover-primary.bs-popover-bottom .arrow:after {
-  border-bottom-color: #468585;
+  border-bottom-color: var(--color-primary);
 }
 
 .popover.popover-primary.bs-popover-left .arrow:after {
-  border-left-color: #468585;
+  border-left-color: var(--color-primary);
 }
 
 .popover.popover-primary .popover-header {
@@ -4821,7 +4826,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .modal.modal-mini .modal-profile i {
-  color: #468585;
+  color: var(--color-primary);
   font-size: 21px;
 }
 
@@ -4830,7 +4835,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .modal.modal-mini .modal-profile.modal-profile-primary {
-  background-color: #468585;
+  background-color: var(--color-primary);
 }
 
 .modal.modal-mini .modal-profile.modal-profile-danger {
@@ -4867,7 +4872,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .modal.modal-primary .modal-content {
-  background-color: #468585;
+  background-color: var(--color-primary);
   color: #ffffff;
 }
 
@@ -4958,7 +4963,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .card[data-background-color="orange"] {
-  background-color: #468585;
+  background-color: var(--color-primary);
 }
 
 .card[data-background-color="red"] {
@@ -6091,7 +6096,7 @@ Created using IcoMoon - icomoon.io
     transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   }
   .sidebar-collapse .navbar-collapse:before {
-    background: #468585;
+    background: var(--color-primary);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
     /* For Opera 11.1 to 12.0 */
@@ -6100,10 +6105,10 @@ Created using IcoMoon - icomoon.io
       linear,
       left top,
       left bottom,
-      from(#468585),
+      from(var(--color-primary)),
       color-stop(80%, #000)
     );
-    background: linear-gradient(#468585 0%, #000 80%);
+    background: linear-gradient(var(--color-primary) 0%, #000 80%);
     /* Standard syntax (must be last) */
     opacity: 0.76;
     filter: alpha(opacity=76);
@@ -6823,7 +6828,7 @@ Created using IcoMoon - icomoon.io
     transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   }
   .burger-menu .navbar-collapse:before {
-    background: #468585;
+    background: var(--color-primary);
     /* For browsers that do not support gradients */
     /* For Safari 5.1 to 6.0 */
     /* For Opera 11.1 to 12.0 */
@@ -6832,10 +6837,10 @@ Created using IcoMoon - icomoon.io
       linear,
       left top,
       left bottom,
-      from(#468585),
+      from(var(--color-primary)),
       color-stop(80%, #000)
     );
-    background: linear-gradient(#468585 0%, #000 80%);
+    background: linear-gradient(var(--color-primary) 0%, #000 80%);
     /* Standard syntax (must be last) */
     opacity: 0.76;
     filter: alpha(opacity=76);
@@ -7611,7 +7616,7 @@ Created using IcoMoon - icomoon.io
 
 .cc-profile-image a:before {
   content: "";
-  border: 15px solid #468585;
+  border: 15px solid var(--color-primary);
   border-radius: 50%;
   height: 180px;
   width: 180px;
@@ -7721,7 +7726,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .cc-reference .carousel-indicators .active {
-  background-color: #468585;
+  background-color: var(--color-primary);
 }
 
 .cc-reference .carousel-inner {
