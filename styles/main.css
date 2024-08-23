@@ -7569,7 +7569,7 @@ Created using IcoMoon - icomoon.io
   background: linear-gradient(
     0deg,
     rgba(44, 44, 44, 0.2),
-    rgba(55, 140, 63, 0.6)
+    var(--color-primary)
   );
   /* Standard syntax */
 }
